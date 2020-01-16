@@ -79,6 +79,6 @@ class TicTacToe
   end
   
   def won?
-    WIN_COMBINATIONS.detect(|combo| )
+    WIN_COMBINATIONS.detect{|combo| position_taken?()}
   end
 end
