@@ -110,4 +110,10 @@ class TicTacToe
       return false 
     end
   end
+  
+  def winner 
+    if won? 
+      return won?[0]
+    end
+  end
 end
