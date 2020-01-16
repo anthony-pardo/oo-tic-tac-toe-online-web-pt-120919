@@ -79,8 +79,6 @@ class TicTacToe
   end
   
   def won?
-    WIN_COMBINATIONS.detect { |combo| (@board[combo[0]] == @board[combo[1]])
-      && (@board[combo[1]] == @board[combo[2]])
-    }
+    WIN_COMBINATIONS.detect {
   end
 end
