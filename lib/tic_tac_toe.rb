@@ -83,8 +83,13 @@ class TicTacToe
   end
   
   def full?
+    flag = true
     @board.each do |element|
-      
+      if element == "X" || element == "O"
+      else 
+        flag = false 
+      end
     end
+    flag
   end
 end
