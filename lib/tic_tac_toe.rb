@@ -79,6 +79,6 @@ class TicTacToe
   end
   
   def won?
-    
+    WIN_COMBINATIONS.detect(|combo| combo)
   end
 end
