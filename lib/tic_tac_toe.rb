@@ -92,4 +92,14 @@ class TicTacToe
     end
     flag
   end
+  
+  def draw? 
+    if won? 
+      return false 
+    elsif full? && !won? 
+      return true 
+    else 
+      return false 
+    end
+  end
 end
