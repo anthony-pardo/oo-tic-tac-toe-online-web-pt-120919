@@ -71,12 +71,10 @@ class TicTacToe
     index = input_to_index(position)
     marker = current_player
     if valid_move?(index)
-      @board[index] = marker 
-      display_board
+       move(index, marker)
+       display_board
     else 
-      puts "Please enter a move:"
-      position = gets.chomp
-      index = input_to_index(position)
+      turn
     end
   end
 end
